@@ -10,8 +10,28 @@ main:
     url: /teaching/
   - title: "The Clo-Author"
     url: /clo-author/
+  - title: "Bad Controls"
+    url: https://hsantanna.org/bad-controls/
   - title: "Posts"
     url: /posts/
+
+badcontrols:
+  - title: "Guide"
+    children:
+      - title: "Full Guide"
+        url: https://hsantanna.org/bad-controls/
+      - title: "The Problem"
+        url: https://hsantanna.org/bad-controls/problem.html
+      - title: "Estimation"
+        url: https://hsantanna.org/bad-controls/estimation.html
+      - title: "Worked Example"
+        url: https://hsantanna.org/bad-controls/example.html
+  - title: "Resources"
+    children:
+      - title: "R Package"
+        url: https://github.com/hsantanna88/bad-controls
+      - title: "Paper (arXiv)"
+        url: https://arxiv.org/abs/2405.10557
 
 clo-author:
   - title: "Getting Started"
