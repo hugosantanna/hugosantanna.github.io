@@ -1,6 +1,6 @@
 # Site settings
-# remote_theme: mmistakes/minimal-mistakes
-theme: minimal-mistakes-jekyll  # use this for local development
+remote_theme: mmistakes/minimal-mistakes
+# theme: minimal-mistakes-jekyll  # uncomment for local development
 minimal_mistakes_skin: "air"
 title: Hugo Sant'Anna
 author: Hugo Sant'Anna
