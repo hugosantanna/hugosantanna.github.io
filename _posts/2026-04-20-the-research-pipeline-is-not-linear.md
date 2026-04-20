@@ -3,7 +3,7 @@ layout: notebook
 title:  "The research pipeline is not linear"
 classes: wide
 use_math: true
-date:   2026-04-26 10:00:00 -0400
+date:   2026-04-20 10:00:00 -0400
 categories: notebook
 excerpt: "On diminishing returns, context rot, and the one worker-critic pair in <a href='https://github.com/hugosantanna/clo-author'>Clo-Author</a> where both curves go bad at once."
 ---
