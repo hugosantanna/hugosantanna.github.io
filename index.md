@@ -30,16 +30,9 @@ Currently, I am interested in difference-in-difference settings where time-varyi
 
 ## The Clo-Author
 
-*Your Econ AI Research Assistant for Claude Code*
+*Econ AI Research Assistant for Claude Code*
 {: .subtitle}
 
-An open-source workflow that turns [Claude Code](https://docs.anthropic.com/en/docs/claude-code) into a full-service applied econometrics research assistant — from literature review to journal submission. Built on [Pedro Sant'Anna's claude-code-my-workflow](https://github.com/pedrohcgs/claude-code-my-workflow) template, reoriented for research publication.
-
-12 specialized agents. 26 slash commands. DiD, IV, RDD, Synthetic Control, Event Studies — all validated. AEA Data Editor compliance built in.
-
 [Learn more](/clo-author/){: .btn .btn--primary}
-[Fork on GitHub](https://github.com/hugosantanna/clo-author){: .btn .btn--inverse}
 
 </div>
-
----

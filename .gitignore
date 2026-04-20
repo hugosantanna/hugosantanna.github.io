@@ -3,3 +3,12 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+_config.local.yml
+.DS_Store
+.claude/
+private/
+Rplots.pdf
+files/*.aux
+files/*.log
+files/*.out
+files/*.synctex.gz

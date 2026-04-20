@@ -12,6 +12,8 @@ main:
     url: /clo-author/
   - title: "Bad Controls"
     url: https://hsantanna.org/bad-controls/
+  - title: "Notebook"
+    url: /notebook/
   - title: "Posts"
     url: /posts/
 
