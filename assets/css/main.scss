@@ -571,11 +571,11 @@ $notebook-accent: #d97706;
   }
 
   // On wide screens, float the widget into the right-side whitespace
-  @media screen and (min-width: 96em) {
+  @media screen and (min-width: 75em) {
     position: fixed;
     top: 6em;
     right: 2em;
-    width: 16em;
+    width: 14em;
     background: #fff;
     padding: 1em 1.25em;
     border: 1px solid #eaeaea;
