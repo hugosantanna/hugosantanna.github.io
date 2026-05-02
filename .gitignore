@@ -1,14 +1,30 @@
-_site
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Hugo theme submodule note: Blowfish is a regular clone, not a submodule.
+
+# Local config
+_config.local.yml
+
+# Editor / OS
+.DS_Store
+.claude/
+
+# Local-only / private
+private/
+Rplots.pdf
+
+# LaTeX build artifacts (next to CV source)
+static/files/*.aux
+static/files/*.log
+static/files/*.out
+static/files/*.synctex.gz
+
+# Legacy Jekyll cache (safe to delete, but keep ignored if it reappears)
+_site/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
-_config.local.yml
-.DS_Store
-.claude/
-private/
-Rplots.pdf
-files/*.aux
-files/*.log
-files/*.out
-files/*.synctex.gz
+vendor/

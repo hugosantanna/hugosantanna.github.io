@@ -1,0 +1,39 @@
+[[main]]
+  name = "Research"
+  pageRef = "research"
+  weight = 10
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 40
+
+[[main]]
+  name = "Teaching"
+  pageRef = "teaching"
+  weight = 50
+
+[[main]]
+  name = "CV"
+  pageRef = "cv"
+  weight = 60
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 70
+
+[[footer]]
+  name = "Bad Controls Guide"
+  url = "https://hsantanna.org/bad-controls/"
+  weight = 10
+
+[[footer]]
+  name = "Clo-Author"
+  url = "https://github.com/hugosantanna/clo-author"
+  weight = 20
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/hugosantanna"
+  weight = 30
