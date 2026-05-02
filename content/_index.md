@@ -1,5 +1,4 @@
 ---
-title: "Hugo Sant'Anna"
 description: "Assistant Professor of Economics at the University of Alabama at Birmingham."
 ---
 
