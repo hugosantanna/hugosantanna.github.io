@@ -1,6 +1,6 @@
 ---
 title: "Hugo Sant'Anna"
-description: "Labor economics, applied econometrics, and the systems we build to do them faster."
+description: "Assistant Professor of Economics at the University of Alabama at Birmingham."
 ---
 
 Assistant Professor of Economics at [UAB Collat School of Business](https://www.uab.edu/business/home/). I study how **large-scale disruptions** — immigration shocks, environmental crises, gender dynamics — reshape labor markets, and I build **AI tooling** to improve empirical research.
