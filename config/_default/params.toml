@@ -26,8 +26,8 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
-defaultFeaturedImage = "img/ipanema.jpg" # used as default for featured images in all articles
-defaultSocialImage = "img/ipanema.jpg" # used as default for social media sharing (Open Graph and Twitter)
+defaultFeaturedImage = "img/profile.jpg" # used as default for featured images in all articles
+defaultSocialImage = "img/profile.jpg" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # Thumbnail aspect ratio as a number (e.g., "1.5", "1.0", "1.777")
 # thumbnailAspectRatio = "1.5"
@@ -54,7 +54,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/ipanema.jpg" # used in: hero, and card
+  homepageImage = "img/profile.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 5
   showMoreLink = true
