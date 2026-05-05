@@ -26,15 +26,14 @@ showPagination: false
 "Difference in Differences with Bad Controls" (with [Carolina Caetano](http://www.carolinacaetano.net), [Brantly Callaway](https://bcallaway11.github.io), and [Stroud Payne](https://as.vanderbilt.edu/economics/bio/stroud-payne/))
 *Working Paper* — [details](/workingpapers/badcontrols/)
 
+"Immigration Enforcement and Local Business Dynamics" (with [Samyam Shrestha](https://shsamyam.org))
+*Working Paper* — [details](/workingpapers/immigration/)
+
 "Labor Market Effects of an Environmental Disaster: Evidence from the 2015 Mariana Dam Failure"
 *Working Paper* — [details](/workingpapers/mariana/)
 
 ## Selected Work in Progress
 
-**"Immigration Enforcement and Business Dynamics"** (with [Samyam Shrestha](https://shsamyam.org))
+**"Does Employer-Based Immigration Enforcement Reduce the Undocumented Immigrant Population? Re-examining the Effects of LAWA"** (with [Samyam Shrestha](https://shsamyam.org))
 
-We analyze whether reducing the undocumented immigrant population affects local business dynamics and the entrepreneurial climate by leveraging the temporal and spatial variation in the implementation of the Secure Communities (SC) program. SC relies on data-sharing between local law enforcement agencies to identify and arrest undocumented immigrants. We find that SC implementation at the commuting zone level reduced the number of establishments and establishment entries, and increased establishment exits in the construction sector, along with a decrease in job creation. As expected, we find no effect on economic sectors with a traditionally low percentage of immigrant workers. Surprisingly, we also find no significant effects in the agricultural sector. We are currently testing four potential mechanisms to explain the construction-sector effects: the entrepreneurial drain effect, the chilling effect, the labor cost effect, and the consumption effect.
-
-**"The Effects of Crime on Firm Entry and Exit: Evidence from Rio de Janeiro"** (with [Samyam Shrestha](https://shsamyam.org))
-
-This paper examines the effects of crime on firm entry and exit in Rio de Janeiro, using data on the universe of firms and establishments in the city from 2007 to 2017. By spatially locating firms and merging this information with granular neighborhood-level crime data, we investigate how crime influences the local business environment. We address endogeneity through an instrumental variable approach, leveraging spatiotemporal variations in the Pacifying Police Unit program — the deployment of the Brazilian military across Rio neighborhoods in the lead-up to the 2014 World Cup and 2016 Olympics. We identify neighborhoods with persistently high crime levels that did not receive military intervention to serve as a control group. We explore heterogeneity at the level of crime type, firm size, industry, and productivity distribution.
+This paper undertakes both a narrow and wide replication of Bohn et al. (*Review of Economics and Statistics*, 2014), who use the synthetic control method to estimate the effect of Arizona's 2007 Legal Arizona Workers Act (LAWA) on the state's unauthorized immigrant population. Our narrow replication confirms their main finding: a 1.5–2 percentage point decline in the share of noncitizen Hispanics following LAWA's implementation. In a wide replication, we re-estimate the treatment effect using the augmented synthetic control method and synthetic difference-in-differences, extend the sample through 2015, and identify both margins of the population response using American Community Survey bilateral migration data. The core finding is robust across all three estimators; however, we find that the effect attenuates after 2011, suggesting partial reversion over the longer horizon. A Poisson gravity difference-in-differences further reveals that both outflows from Arizona and inflows to the state responded to the law, with outflows responding at signing and inflows at implementation.
