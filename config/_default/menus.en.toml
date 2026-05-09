@@ -14,6 +14,11 @@
   weight = 50
 
 [[main]]
+  name = "Clo-Author"
+  url = "https://hugosantanna.github.io/clo-author/"
+  weight = 55
+
+[[main]]
   name = "CV"
   pageRef = "cv"
   weight = 60
