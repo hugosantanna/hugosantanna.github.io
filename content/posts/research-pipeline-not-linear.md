@@ -7,6 +7,7 @@ categories: ["notebook"]
 tags: ["ai", "writing", "research"]
 showTableOfContents: true
 math: true
+featureimage: "img/thumbnails/pipeline-not-linear.png"
 aliases:
   - /notebook/2026/04/20/the-research-pipeline-is-not-linear/
   - /notebook/2026/04/20/the-research-pipeline-is-not-linear.html

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2e1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Worker-critic pairs as opposing nodes -->
+  <!-- Pair 1 -->
+  <circle cx="300" cy="200" r="40" fill="none" stroke="#4a9eff44" stroke-width="2"/>
+  <text x="300" y="207" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#4a9eff88">writer</text>
+  <circle cx="500" cy="200" r="40" fill="none" stroke="#d9775744" stroke-width="2"/>
+  <text x="500" y="207" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#d9775788">critic</text>
+  <line x1="340" y1="200" x2="460" y2="200" stroke="#ffffff22" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Pair 2 -->
+  <circle cx="300" cy="320" r="40" fill="none" stroke="#4a9eff44" stroke-width="2"/>
+  <text x="300" y="327" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#4a9eff88">coder</text>
+  <circle cx="500" cy="320" r="40" fill="none" stroke="#d9775744" stroke-width="2"/>
+  <text x="500" y="327" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#d9775788">critic</text>
+  <line x1="340" y1="320" x2="460" y2="320" stroke="#ffffff22" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Pair 3 -->
+  <circle cx="300" cy="440" r="40" fill="none" stroke="#4a9eff44" stroke-width="2"/>
+  <text x="300" y="447" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#4a9eff88">strategist</text>
+  <circle cx="500" cy="440" r="40" fill="none" stroke="#d9775744" stroke-width="2"/>
+  <text x="500" y="447" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#d9775788">critic</text>
+  <line x1="340" y1="440" x2="460" y2="440" stroke="#ffffff22" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Orchestrator -->
+  <circle cx="800" cy="320" r="60" fill="none" stroke="#ffffff22" stroke-width="2"/>
+  <text x="800" y="315" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#ffffff55">orches-</text>
+  <text x="800" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#ffffff55">trator</text>
+  <!-- Lines to orchestrator -->
+  <line x1="540" y1="200" x2="740" y2="290" stroke="#ffffff11" stroke-width="1"/>
+  <line x1="540" y1="320" x2="740" y2="320" stroke="#ffffff11" stroke-width="1"/>
+  <line x1="540" y1="440" x2="740" y2="350" stroke="#ffffff11" stroke-width="1"/>
+  <!-- Score badges -->
+  <g transform="translate(640, 175)">
+    <rect x="0" y="0" width="40" height="22" rx="11" fill="#4d7c5a33" stroke="#4d7c5a66" stroke-width="1"/>
+    <text x="20" y="15" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#4d7c5a">92</text>
+  </g>
+  <g transform="translate(640, 305)">
+    <rect x="0" y="0" width="40" height="22" rx="11" fill="#b8860b33" stroke="#b8860b66" stroke-width="1"/>
+    <text x="20" y="15" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#b8860b">78</text>
+  </g>
+  <g transform="translate(640, 425)">
+    <rect x="0" y="0" width="40" height="22" rx="11" fill="#4d7c5a33" stroke="#4d7c5a66" stroke-width="1"/>
+    <text x="20" y="15" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#4d7c5a">88</text>
+  </g>
+</svg>

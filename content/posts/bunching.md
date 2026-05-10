@@ -7,6 +7,7 @@ categories: ["R"]
 tags: ["bunching", "causal-inference", "R"]
 showTableOfContents: true
 math: true
+featureimage: "img/thumbnails/bunching.png"
 aliases:
   - /r/2024/08/04/bunching/
   - /r/2024/08/04/bunching.html

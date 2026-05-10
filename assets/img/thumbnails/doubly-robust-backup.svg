@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Two overlapping shields -->
+  <!-- Shield 1: propensity score -->
+  <g transform="translate(440, 160)">
+    <path d="M160,0 L300,60 L300,200 C300,320 160,380 160,380 C160,380 20,320 20,200 L20,60 Z" fill="none" stroke="#4a9eff55" stroke-width="3"/>
+    <path d="M160,0 L300,60 L300,200 C300,320 160,380 160,380 C160,380 20,320 20,200 L20,60 Z" fill="#4a9eff0a"/>
+    <text x="160" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#4a9eff99">P(X)</text>
+  </g>
+  <!-- Shield 2: outcome model -->
+  <g transform="translate(520, 160)">
+    <path d="M160,0 L300,60 L300,200 C300,320 160,380 160,380 C160,380 20,320 20,200 L20,60 Z" fill="none" stroke="#d9775755" stroke-width="3"/>
+    <path d="M160,0 L300,60 L300,200 C300,320 160,380 160,380 C160,380 20,320 20,200 L20,60 Z" fill="#d977570a"/>
+    <text x="160" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#d9775799">E[Y|X]</text>
+  </g>
+  <!-- Overlap region highlight -->
+  <ellipse cx="600" cy="350" rx="60" ry="100" fill="#ffffff08" stroke="#ffffff22" stroke-width="1"/>
+  <!-- Checkmarks -->
+  <g transform="translate(560, 520)">
+    <text text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#ffffff55">one can fail — you're still consistent</text>
+  </g>
+</svg>

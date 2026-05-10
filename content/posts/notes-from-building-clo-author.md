@@ -6,6 +6,7 @@ summary: "Kicking off a series of notes on building [Clo-Author](https://github.
 categories: ["notebook"]
 tags: ["ai", "claude-code", "workflow"]
 showTableOfContents: true
+featureimage: "img/thumbnails/clo-author-notes.jpg"
 aliases:
   - /notebook/2026/04/19/notes-from-building-clo-author/
   - /notebook/2026/04/19/notes-from-building-clo-author.html

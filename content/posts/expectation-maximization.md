@@ -7,6 +7,7 @@ categories: ["R"]
 tags: ["em-algorithm", "labor", "R"]
 showTableOfContents: true
 math: true
+featureimage: "img/thumbnails/em-algorithm.png"
 aliases:
   - /r/2024/04/05/expectation-maximization/
   - /r/2024/04/05/expectation-maximization.html

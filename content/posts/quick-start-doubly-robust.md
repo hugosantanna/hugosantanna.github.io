@@ -7,6 +7,7 @@ categories: ["R"]
 tags: ["causal-inference", "econometrics", "R"]
 showTableOfContents: true
 math: true
+featureimage: "img/thumbnails/doubly-robust.png"
 aliases:
   - /r/2022/12/13/quick-start-to-doubly-robust-estimators/
   - /r/2022/12/13/quick-start-to-doubly-robust-estimators.html

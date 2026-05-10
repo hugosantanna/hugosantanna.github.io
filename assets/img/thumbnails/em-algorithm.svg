@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#1a2e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Two Gaussian bells -->
+  <!-- Gaussian 1 -->
+  <path d="M100,500 C150,498 200,490 250,470 C300,440 340,350 370,250 C390,180 400,150 410,180 C420,220 440,320 470,400 C500,460 550,490 650,500" fill="#4a9eff12" stroke="#4a9eff66" stroke-width="2.5"/>
+  <!-- Gaussian 2 -->
+  <path d="M550,500 C600,498 650,490 700,470 C750,440 790,350 820,250 C840,180 850,150 860,180 C870,220 890,320 920,400 C950,460 1000,490 1100,500" fill="#d9775712" stroke="#d9775766" stroke-width="2.5"/>
+  <!-- Overlap shading -->
+  <path d="M550,500 C600,498 650,490 700,470 C700,470 500,460 470,400 C470,400 500,460 550,490 Z" fill="#ffffff06"/>
+  <!-- E step arrow -->
+  <g transform="translate(300, 100)">
+    <text font-family="Georgia, serif" font-size="28" fill="#4a9eff88" font-style="italic">E</text>
+  </g>
+  <!-- Arrow cycling -->
+  <path d="M340,110 C450,70 550,70 660,110" fill="none" stroke="#ffffff33" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M660,130 C550,170 450,170 340,130" fill="none" stroke="#ffffff33" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- M step arrow -->
+  <g transform="translate(680, 100)">
+    <text font-family="Georgia, serif" font-size="28" fill="#d9775788" font-style="italic">M</text>
+  </g>
+  <!-- Data points as small dots -->
+  <g fill="#ffffff22">
+    <circle cx="280" cy="480" r="3"/><circle cx="310" cy="460" r="3"/><circle cx="340" cy="430" r="3"/>
+    <circle cx="360" cy="390" r="3"/><circle cx="380" cy="320" r="3"/><circle cx="400" cy="270" r="3"/>
+    <circle cx="420" cy="310" r="3"/><circle cx="450" cy="380" r="3"/><circle cx="480" cy="440" r="3"/>
+    <circle cx="520" cy="470" r="3"/><circle cx="560" cy="480" r="3"/>
+    <circle cx="730" cy="460" r="3"/><circle cx="760" cy="430" r="3"/><circle cx="790" cy="370" r="3"/>
+    <circle cx="810" cy="290" r="3"/><circle cx="830" cy="240" r="3"/><circle cx="850" cy="270" r="3"/>
+    <circle cx="870" cy="330" r="3"/><circle cx="900" cy="400" r="3"/><circle cx="930" cy="450" r="3"/>
+    <circle cx="960" cy="475" r="3"/><circle cx="600" cy="490" r="3"/><circle cx="650" cy="485" r="3"/>
+  </g>
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="none" stroke="#ffffff33" stroke-width="1"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#ffffff08" stroke-width="1">
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+  </g>
+  <!-- Smooth distribution curve -->
+  <path d="M100,500 C200,498 300,490 400,460 C450,440 480,400 500,340 C520,280 530,220 540,180 C550,150 560,160 570,200 C580,260 590,320 610,380 C640,440 700,470 800,485 C900,495 1000,498 1100,500" fill="none" stroke="#4a9eff44" stroke-width="2"/>
+  <!-- Area under curve -->
+  <path d="M100,500 C200,498 300,490 400,460 C450,440 480,400 500,340 C520,280 530,220 540,180 C550,150 560,160 570,200 C580,260 590,320 610,380 C640,440 700,470 800,485 C900,495 1000,498 1100,500 L1100,500 L100,500 Z" fill="#4a9eff08"/>
+  <!-- The bunch: a spike at the threshold -->
+  <path d="M500,500 L500,460 C510,440 520,300 530,160 C535,100 540,80 545,100 C550,160 555,300 560,440 L570,460 L570,500 Z" fill="#d9775744" stroke="#d97757" stroke-width="2"/>
+  <!-- Threshold line -->
+  <line x1="535" y1="60" x2="535" y2="520" stroke="#d97757" stroke-width="1.5" stroke-dasharray="8,6"/>
+  <text x="535" y="555" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#d9775799">threshold</text>
+  <!-- Counterfactual (dashed) -->
+  <path d="M100,500 C200,498 300,490 400,460 C450,440 480,400 510,340 C530,280 540,240 550,220 C560,240 570,280 590,340 C620,400 700,470 800,485 C900,495 1000,498 1100,500" fill="none" stroke="#ffffff33" stroke-width="1.5" stroke-dasharray="6,4"/>
+</svg>
