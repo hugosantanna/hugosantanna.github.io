@@ -1,0 +1,28 @@
+{{- $title := .Site.Title -}}
+{{- if not .IsHome }}{{ $title = printf "%s | %s" .Title .Site.Title }}{{ end -}}
+{{- $desc := or .Description .Summary .Site.Params.description | plainify | truncate 200 -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+{{- end }}
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- $img := "" -}}
+{{- with .Params.featureimage }}{{ with resources.Get . }}{{ $img = .Permalink }}{{ end }}{{ end -}}
+{{- if not $img }}{{ with resources.Get site.Params.socialImage }}{{ $img = .Permalink }}{{ end }}{{ end -}}
+{{- with $img }}
+<meta property="og:image" content="{{ . }}">
+<meta name="twitter:card" content="summary_large_image">
+{{- end }}
+{{- $css := slice (resources.Get "css/fonts.css") (resources.Get "css/syntax.css") (resources.Get "css/main.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- range (slice "fonts/newsreader-normal-latin.woff2" "fonts/newsreader-italic-latin.woff2") }}
+<link rel="preload" href="{{ . | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- end }}

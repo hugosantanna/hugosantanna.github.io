@@ -1,0 +1,16 @@
+{{- $a := .Site.Params.author -}}
+<aside class="identity">
+  {{- with resources.Get $a.photo }}
+  {{- $img := .Resize "520x q88" }}
+  <img class="portrait" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $a.name }}">
+  {{- end }}
+  <p class="identity-role">{{ $a.title }}<br>
+    <a href="{{ $a.institutionURL }}" rel="noopener">{{ $a.department }}<br>{{ $a.institution }}</a></p>
+  <p class="identity-links">
+    <a href="mailto:{{ $a.email }}">{{ $a.email }}</a><br>
+    <a href="{{ $a.cv }}">Curriculum vitae</a><br>
+    <a href="{{ $a.scholar }}" rel="noopener">Google Scholar</a><br>
+    <a href="{{ $a.github }}" rel="noopener">GitHub</a><br>
+    <a href="{{ $a.readingGroup }}" rel="noopener">UGA 'Metrics Reading Group</a>
+  </p>
+</aside>

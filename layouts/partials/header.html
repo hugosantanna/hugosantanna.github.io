@@ -1,0 +1,10 @@
+<header class="site-header wrap">
+  <a class="site-name" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+  <nav class="site-nav" aria-label="Main">
+    {{- $current := . -}}
+    {{- range .Site.Menus.main }}
+    {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
+    <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}{{ if strings.HasPrefix .URL "http" }} rel="noopener"{{ end }}>{{ .Name }}</a>
+    {{- end }}
+  </nav>
+</header>

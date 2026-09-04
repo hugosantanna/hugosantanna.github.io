@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{- $research := where .Site.RegularPages "Section" "research" -}}
+{{- $pubs := where $research "Params.status" "published" -}}
+{{- $wps := where $research "Params.status" "working" -}}
+<div class="home-grid">
+  <h1 class="home-name">{{ .Site.Params.author.name }}</h1>
+  {{ partial "identity.html" . }}
+  <div class="home-main">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    {{- with $pubs }}
+    <section class="papers">
+      <h2>Publications</h2>
+      {{- range . }}{{ partial "paper.html" (dict "page" . "compact" false) }}{{ end }}
+    </section>
+    {{- end }}
+
+    {{- with $wps }}
+    <section class="papers">
+      <h2>Working papers</h2>
+      {{- range . }}{{ partial "paper.html" (dict "page" . "compact" false) }}{{ end }}
+    </section>
+    {{- end }}
+    <p class="more"><a href="{{ "/research/" | relURL }}">All Research</a></p>
+  </div>
+</div>
+{{ end }}

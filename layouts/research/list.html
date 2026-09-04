@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{- $research := .RegularPages -}}
+<article class="page">
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+  {{- range $s := slice (dict "key" "published" "label" "Publications") (dict "key" "working" "label" "Working papers") (dict "key" "progress" "label" "Work in progress") }}
+  {{- with where $research "Params.status" $s.key }}
+  <section class="papers">
+    <h2>{{ $s.label }}</h2>
+    {{- range . }}{{ partial "paper.html" (dict "page" . "compact" false) }}{{ end }}
+  </section>
+  {{- end }}
+  {{- end }}
+</article>
+{{ end }}

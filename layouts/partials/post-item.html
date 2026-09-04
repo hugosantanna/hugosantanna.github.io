@@ -1,0 +1,7 @@
+<li class="post-item">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+  <div>
+    <a class="post-item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- with .Params.summary }}<p class="post-item-summary">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</li>

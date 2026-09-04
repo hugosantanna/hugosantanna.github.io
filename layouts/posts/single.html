@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="page post">
+  <header class="post-header">
+    <p class="crumb"><a href="{{ "/posts/" | relURL }}">Blog</a></p>
+    <h1>{{ .Title }}</h1>
+    <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>, {{ .ReadingTime }} min read</p>
+  </header>
+  {{- if .Params.showTableOfContents }}
+  <nav class="toc" aria-label="Contents">{{ .TableOfContents }}</nav>
+  {{- end }}
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- $prev := .NextInSection }}{{ $next := .PrevInSection }}
+  {{- if or $prev $next }}
+  <nav class="post-nav" aria-label="Neighbouring posts">
+    {{ with $prev }}<a class="prev" href="{{ .RelPermalink }}"><span>Previous</span>{{ .Title }}</a>{{ end }}
+    {{ with $next }}<a class="next" href="{{ .RelPermalink }}"><span>Next</span>{{ .Title }}</a>{{ end }}
+  </nav>
+  {{- end }}
+</article>
+{{ end }}

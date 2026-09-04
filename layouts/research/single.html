@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="page paper-page">
+  <p class="crumb"><a href="{{ "/research/" | relURL }}">Research</a></p>
+  <h1>{{ .Title }}</h1>
+  {{- $p := . }}
+  <p class="paper-meta">
+    {{- with .Params.coauthors }}with
+      {{- $n := len . }}
+      {{- range $i, $c := . }}
+        {{- if and (gt $i 0) (eq $n 2) }} and{{ else if and (gt $i 0) (eq (add $i 1) $n) }}, and{{ else if gt $i 0 }},{{ end }}
+        {{ with $c.url }}<a href="{{ . }}" rel="noopener">{{ $c.name }}</a>{{ else }}{{ $c.name }}{{ end }}
+      {{- end }}.
+    {{ end -}}
+    {{- with .Params.venue }}<em>{{ . }}</em>{{ with $p.Params.year }}, {{ . }}{{ end }}.
+    {{- else }}{{ with .Params.note }}<em>{{ . }}</em>.{{ end }}{{ end }}
+    {{- if .Params.jmp }} Job market paper.{{ end }}
+  </p>
+  {{- with .Params.links }}
+  <p class="paper-links">
+    {{- range . }}<a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} rel="noopener"{{ end }}>{{ .name }}</a>{{ end }}
+  </p>
+  {{- end }}
+  {{- with .Params.figures }}
+  <div class="figures figures-{{ len . }}">
+    {{- range . }}<img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">{{ end }}
+  </div>
+  {{- end }}
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- with .Params.citation }}
+  <section class="citation">
+    <h2>Suggested citation</h2>
+    <p>{{ . | markdownify }}</p>
+  </section>
+  {{- end }}
+</article>
+{{ end }}

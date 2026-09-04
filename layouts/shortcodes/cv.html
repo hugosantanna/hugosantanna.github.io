@@ -1,0 +1,9 @@
+{{- $pdf := .Get "src" -}}
+<p class="button-row">
+  <a class="button" href="{{ $pdf }}" download>Download PDF</a>
+  <a href="{{ $pdf }}" target="_blank" rel="noopener">Open in a new tab</a>
+</p>
+<div class="pdf-embed">
+  <iframe src="{{ $pdf }}#view=FitH" title="Curriculum vitae"></iframe>
+</div>
+<p class="pdf-fallback">If the viewer above is blank, <a href="{{ $pdf }}">open the PDF directly</a>.</p>

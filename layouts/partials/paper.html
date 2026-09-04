@@ -1,0 +1,26 @@
+{{- /* One paper entry. Context: the paper page. Param .compact hides links row. */ -}}
+{{- $p := .page -}}
+<article class="paper">
+  {{- $href := $p.RelPermalink }}{{ if not $p.Content }}{{ with index $p.Params.links 0 }}{{ $href = .url }}{{ end }}{{ end }}
+  <h3 class="paper-title"><a href="{{ $href }}"{{ if strings.HasPrefix $href "http" }} rel="noopener"{{ end }}>{{ $p.Title }}</a></h3>
+  <p class="paper-meta">
+    {{- with $p.Params.coauthors }}with
+      {{- $n := len . }}
+      {{- range $i, $c := . }}
+        {{- if and (gt $i 0) (eq $n 2) }} and{{ else if and (gt $i 0) (eq (add $i 1) $n) }}, and{{ else if gt $i 0 }},{{ end }}
+        {{ with $c.url }}<a href="{{ . }}" rel="noopener">{{ $c.name }}</a>{{ else }}{{ $c.name }}{{ end }}
+      {{- end }}.
+    {{ end -}}
+    {{- with $p.Params.venue }}<em>{{ . }}</em>{{ with $p.Params.year }}, {{ . }}{{ end }}.
+    {{- else }}{{ with $p.Params.note }}<em>{{ . }}</em>.{{ end }}{{ end }}
+    {{- if $p.Params.jmp }} Job market paper.{{ end }}
+  </p>
+  {{- if not .compact }}
+  {{- with $p.Params.links }}
+  <p class="paper-links">
+    {{- range . }}<a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} rel="noopener"{{ end }}>{{ .name }}</a>{{ end }}
+    {{ if $p.Content }}<a href="{{ $p.RelPermalink }}">Abstract</a>{{ end }}
+  </p>
+  {{- end }}
+  {{- end }}
+</article>

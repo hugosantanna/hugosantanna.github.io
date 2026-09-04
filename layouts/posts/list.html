@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="page">
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+  {{- range .RegularPages.GroupByDate "2006" }}
+  <section class="year-group">
+    <h2 class="year">{{ .Key }}</h2>
+    <ul class="post-list post-list-thumbs">
+      {{- range .Pages }}
+      <li class="post-item">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+        <div>
+          <a class="post-item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- with .Params.summary }}<p class="post-item-summary">{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{- with .Params.featureimage }}{{ with resources.Get . }}
+        {{- $t := .Fill "320x200 Center q85" }}
+        <a class="post-thumb" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="" loading="lazy"></a>
+        {{- end }}{{ end }}
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</article>
+{{ end }}

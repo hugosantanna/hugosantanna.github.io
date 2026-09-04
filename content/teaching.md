@@ -1,32 +1,21 @@
 ---
 title: "Teaching"
-date: 2026-05-01
-draft: false
-showAuthor: false
-showDate: false
-showReadingTime: false
-showWordCount: false
-showPagination: false
+description: "Courses taught by Hugo Sant'Anna at UAB, teaching awards, and the R translation of Causal Inference: The Mixtape."
 ---
 
-## Instructor of Record
+## Courses
 
-**University of Alabama at Birmingham — Collat School of Business**
+**University of Alabama at Birmingham, Collat School of Business**
 
-- **Managerial Economics** — graduate
-- **Principles of Microeconomics** — undergraduate
-- **Intermediate Microeconomics** — undergraduate
+- Managerial Economics (graduate)
+- Principles of Microeconomics (undergraduate)
+- Intermediate Microeconomics (undergraduate)
 
----
+## Awards
 
-## Recognition
+- Outstanding Teaching Assistant Award, Center for Teaching and Learning, University of Georgia
+- Swift Undergraduate Teaching Fellowship Award, Terry College of Business, University of Georgia
 
-> *Outstanding Teaching Assistant Award* — Center for Teaching and Learning, University of Georgia
+## Causal Inference: The Mixtape
 
-> *Swift Undergraduate Teaching Fellowship Award* — Terry College of Business, University of Georgia
-
----
-
-## *Causal Inference: The Mixtape*
-
-Back in my master's, I collaborated with [Scott Cunningham](http://www.scunning.com) to translate every model in *Causal Inference: The Mixtape* from Stata to R. [Check it out](https://mixtape.scunning.com/) — a new edition is coming soon.
+I contributed the R code for [Scott Cunningham](http://www.scunning.com)'s *Causal Inference: The Mixtape*. Check out his awesome [book website](https://mixtape.scunning.com/).

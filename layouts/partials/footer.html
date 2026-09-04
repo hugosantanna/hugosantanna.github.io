@@ -1,0 +1,12 @@
+{{- $a := .Site.Params.author -}}
+<footer class="site-footer wrap">
+  <p>
+    <a href="mailto:{{ $a.email }}">{{ $a.email }}</a>
+    <a href="{{ $a.scholar }}" rel="noopener">Google Scholar</a>
+    <a href="{{ $a.github }}" rel="noopener">GitHub</a>
+    <a href="{{ $a.twitter }}" rel="noopener">Twitter</a>
+    <a href="{{ $a.readingGroup }}" rel="noopener">UGA 'Metrics Reading Group</a>
+    <a href="{{ "/posts/index.xml" | relURL }}">RSS</a>
+  </p>
+  <p class="colophon">&copy; {{ now.Year }} {{ $a.name }}</p>
+</footer>

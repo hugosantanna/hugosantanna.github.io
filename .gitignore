@@ -3,7 +3,6 @@ public/
 resources/
 .hugo_build.lock
 
-# Hugo theme submodule note: Blowfish is a regular clone, not a submodule.
 
 # Local config
 _config.local.yml

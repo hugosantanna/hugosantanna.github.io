@@ -1,0 +1,12 @@
+<div class="photo-grid">
+{{- range .Page.Params.gallery }}
+  {{- $cap := .caption }}
+  {{- with $.Page.Resources.Get .src }}
+  {{- $img := .Resize "1000x q85" }}
+  <figure>
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $cap }}" loading="lazy">
+    <figcaption>{{ $cap }}</figcaption>
+  </figure>
+  {{- end }}
+{{- end }}
+</div>

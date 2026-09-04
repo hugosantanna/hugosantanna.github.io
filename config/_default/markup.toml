@@ -1,26 +1,24 @@
-# -- Markup --
-# These settings are required for the theme to function.
-
 [goldmark]
   [goldmark.parser]
     wrapStandAloneImageWithinParagraph = false
-
     [goldmark.parser.attribute]
       block = true
-
+      title = true
   [goldmark.renderer]
     unsafe = true
-
   [goldmark.extensions]
+    typographer = true
     [goldmark.extensions.passthrough]
       enable = true
       [goldmark.extensions.passthrough.delimiters]
         block = [['\[', '\]'], ['$$', '$$']]
-        inline = [['\(', '\)']]
+        inline = [['\(', '\)'], ['$', '$']]
 
 [highlight]
   noClasses = false
+  lineNos = false
+  guessSyntax = false
 
 [tableOfContents]
   startLevel = 2
-  endLevel = 4
+  endLevel = 3
