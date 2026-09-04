@@ -3,7 +3,6 @@
 {{- $pubs := where $research "Params.status" "published" -}}
 {{- $wps := where $research "Params.status" "working" -}}
 <div class="home-grid">
-  <h1 class="home-name">{{ .Site.Params.author.name }}</h1>
   {{ partial "identity.html" . }}
   <div class="home-main">
     <div class="prose">
