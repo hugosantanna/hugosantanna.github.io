@@ -6,16 +6,16 @@ gallery:
     caption: Ipanema Beach at winter sunset
   - src: rio-2-copacabana-night.jpg
     caption: Copacabana at night, Sugar Loaf in the distance
-  - src: rio-3-botafogo-rainbow.jpg
-    caption: Rainbow over Botafogo Bay
+  - src: rio-7-sunset-mountains.jpg
+    caption: Sunset over the Pedra Branca chain, Pedra da Bruxa rising in the middle
   - src: rio-4-corcovado.jpg
     caption: Christ the Redeemer emerging from clouds atop Corcovado
   - src: rio-5-marmoset.jpg
     caption: A marmoset (sagui) perched on a railing
   - src: rio-6-lagoa-pier.jpg
     caption: A pier on the Barra lagoon, high-rises across the water
-  - src: rio-7-sunset-mountains.jpg
-    caption: Sunset over the Pedra Branca chain, Pedra da Bruxa rising in the middle
+  - src: rio-3-botafogo-rainbow.jpg
+    caption: Rainbow over Botafogo Bay
 ---
 
 I am from the beautiful city of Rio de Janeiro, Brazil. Rio has undoubtedly been a major influence on my enthusiasm for economics.
