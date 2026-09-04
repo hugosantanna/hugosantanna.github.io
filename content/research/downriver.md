@@ -5,7 +5,9 @@ status: working
 weight: 50
 coauthors:
   - name: Débora Mazetto
+    url: https://www.tntech.edu/directory/business/debora-mazetto.php
   - name: Kelly Santos
+    url: https://sites.google.com/view/kellygonsantos
 links:
   - name: SSRN
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7139278
