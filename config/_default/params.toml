@@ -1,7 +1,7 @@
-description = "Hugo Sant'Anna is an Assistant Professor of Economics at the University of Alabama at Birmingham, working on labor economics, immigration, and difference-in-differences methods."
+description = "Hugo Sant'Anna is an Assistant Professor of Economics at the University of Alabama at Birmingham, working on labor economics, econometrics, and causal inference."
 mainSections = ["posts"]
 dateFormat = "January 2, 2006"
-socialImage = "img/social.jpg"
+socialImage = "img/profile-lake.jpg"
 
 [author]
   name = "Hugo Sant'Anna"

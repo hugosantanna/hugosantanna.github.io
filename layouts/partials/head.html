@@ -22,7 +22,7 @@
 {{- if not $img }}{{ with resources.Get site.Params.socialImage }}{{ $img = .Permalink }}{{ end }}{{ end -}}
 {{- with $img }}
 <meta property="og:image" content="{{ . }}">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 {{- end }}
 {{- $css := slice (resources.Get "css/fonts.css") (resources.Get "css/syntax.css") (resources.Get "css/main.css") | resources.Concat "css/site.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
