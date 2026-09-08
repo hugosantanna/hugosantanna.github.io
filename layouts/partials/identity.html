@@ -1,7 +1,7 @@
 {{- $a := .Site.Params.author -}}
 <aside class="identity">
   {{- with resources.Get $a.photo }}
-  {{- $img := .Resize "520x q88" }}
+  {{- $img := .Resize "400x q90" }}
   <img class="portrait" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $a.name }}">
   {{- end }}
   <p class="identity-role">{{ $a.title }}<br>
