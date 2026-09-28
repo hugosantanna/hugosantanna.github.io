@@ -2,7 +2,8 @@
 title: "Down the River: Labor Market Effects of Brazil's Worst Environmental Disaster"
 date: 2026-03-01
 status: working
-weight: 50
+note: "Revise and resubmit, Labour Economics"
+weight: 5
 coauthors:
   - name: Débora Mazetto
     url: https://www.tntech.edu/directory/business/debora-mazetto.php
